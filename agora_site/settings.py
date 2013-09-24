@@ -189,7 +189,8 @@ INSTALLED_APPS = (
     'haystack',
     'djcelery',
     'guardian',
-    'djsgettext'
+    'djsgettext',
+    'gunicorn'
 )
 
 # Cache settings
@@ -279,6 +280,7 @@ LOGIN_ERROR_URL    = '/accounts/signin/'
 
 # Django crispy forms settings
 
+CRISPY_TEMPLATE_PACK = 'bootstrap'
 CRISPY_FAIL_SILENTLY = not DEBUG
 
 # Haystack
